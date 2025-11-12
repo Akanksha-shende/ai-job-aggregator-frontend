@@ -1,0 +1,103 @@
+.job-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.job-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+.job-header {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.job-title {
+  font-size: 1.25em;
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.job-company {
+  font-size: 0.9em;
+  color: #666;
+  margin: 0;
+}
+
+.job-body {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.job-description {
+  font-size: 0.9em;
+  color: #555;
+  line-height: 1.4;
+  height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.job-footer {
+  padding: 15px 20px;
+  background-color: #f7f7f7;
+  text-align: right;
+  border-top: 1px solid #eee;
+}
+
+.job-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.job-link:hover {
+  text-decoration: underline;
+}
+
+.job-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.analyze-button {
+    background-color: #02d4bf;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.analyze-button:hover {
+    background-color: #163d31;
+}
+
+.analyze-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.job-analysis {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-top: 1px solid #dee2e6;
+    font-size: 0.9em;
+    white-space: pre-wrap; /* Preserve newlines from AI output */
+}
