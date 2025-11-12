@@ -9,7 +9,7 @@ const JobCard = ({ job }) => {
     const handleAnalyze = async () => {
         setLoading(true);
         try {
-            const response = await axios.post('https://raj-job-api.onrender.com/api/analyze-job', {
+            const response = await axios.post('https://ai-job-aggregator-backend.onrender.com/api/analyze-job', {
     description: job.description
 });
             setAnalysis(response.data.analysis);
@@ -54,3 +54,4 @@ const JobCard = ({ job }) => {
 };
 
 export default JobCard;
+
